@@ -20,7 +20,7 @@ serverSocket = socket(AF_INET, SOCK_DGRAM)
 serverSocket.bind((self_ip, serverPort))
 
 
-got_meme = 0
+got_meme = False
 
 while True:
     # receive bytes from the port that we're listening on
@@ -41,11 +41,11 @@ while True:
     print('message : ', message, ' from address : ', address)
 
     sub.run(["firefox", url])
-    got_meme = 1
+    got_meme = True
 
     if got_meme:
         time.sleep(time_between_memes)
-        got_meme=0
+        got_meme=False
 
     # os.system("firefox " + url)
     # respond to the client as the server
