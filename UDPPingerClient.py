@@ -1,21 +1,5 @@
-# Alex Harris
-# Network Programming
-# Spring 2017
-# Homework 5: A UDP Pinger
-
 from socket import *
-import time
 
-# define a class to hold meaningful info about the ping session
-# class ping_summary(object):
-#     def __init__(self):
-#         self.minimum_time = 0
-#         self.maximum_time = 0
-#         self.average_time = 0
-#         self.num_returned_msg = 0
-#         self.aggregated_ping_time = 0
-#         self.num_packets_lost = 0
-#         self.packet_loss_rate = 0.0
 
 # build socket\
 # FIXME - input the ip address of the server rather than local host
